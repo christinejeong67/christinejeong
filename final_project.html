@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christine Jeong | Home Page</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="Meta Tag, Responsive Web Design, USC, HTML, CSS">
+        <meta name="description" content="This is a portfolio website that I created for ITP 104 final project. It tells more about myself and showcases my artworks.">
+
+        <style>
+            @font-face
+		    {
+                font-family: 'Mexcellent3D';
+                src: url('fonts/Mexcellent3D.ttf');
+		    }
+
+            body 
+            {
+                margin: 0px;
+		    }
+
+            #header
+            {
+                height: 700px;
+                background-size: cover;
+                background-position: center;
+                background-image: url('img/background1.png');
+                background-repeat: no-repeat;
+            }
+
+            h1
+            {
+                color: #dd3c87;
+                /* text-shadow: 0px 0px 10px #000; */
+
+                font-family: 'Mexcellent3D', fantasy;
+                font-weight: normal;
+                font-size: 80px;
+
+                margin-top: auto;
+                margin-bottom: auto;
+                text-align: center;
+                padding: 230px;
+                padding-bottom: 140px;
+                /* line-height: 200px; */
+            }
+
+            h2
+            {
+                color: #dd3c87;
+                font-family: 'Mexcellent3D', fantasy;
+                font-weight: normal;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .section 
+            {
+                width: 980px;
+                padding: 50px;
+                margin: auto;
+                justify-content: center;
+            }
+
+            .box 
+            {
+                background-color: #f7d4e4;
+                color: #000;
+                width: 160px;
+                height: 160px;
+                text-align: center;
+                line-height: 160px;
+
+                /* font-family: "Raleway", sans-serif; */
+                font-size: 13px;
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            #duration .container 
+            {
+                display: inline-block;
+                margin: 20px;
+                width: 200px;
+            }
+
+            #duration:hover .box 
+            {
+                width: 200px;
+                height: 200px;
+                background-color: #dd3c87;
+                color: #fff;
+                line-height: 200px;
+                font-size: 16px;
+            }
+
+            #duration1 
+            {
+                /* transition: width 1s, height 2s, background-color 3s; */
+                transition: all 500ms;
+            }
+
+            #duration2 
+            {
+                transition: all 1s;
+            }
+
+            #duration3
+            {
+                transition: all 2s;
+            }
+
+            #duration4
+            {
+                transition: all 3s;
+            }
+
+            .button1
+            {
+                color:#dd3c87;
+            }
+                        
+        </style>
+    </head>
+
+    <body>
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a id="selected-nav" href="final_project.html#overview-section">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="final_project.html#work-section">Work</a>
+                    <ul id="sub-menu">
+                        <li><a href="graphic_design.html">Graphic Design</a></li>
+                        <li><a href="uiux.html">UI / UX</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+            <div id="overview-section">
+                <div id="header">
+                    <h1>Hi, I'm Christine. I'm a designer, engineer, and an entrepreneur.</h1>
+                </div>
+            </div>
+
+        <div id="duration" class="section">
+            <div id="work-section">
+                <h2>Explore My Work!</h2>
+                <div class="container">
+                    <a href="graphic_design.html"><div id="duration1" class="box">Graphic Design</div></a>
+                </div>
+                <div class="container">
+                    <a href="uiux.html"><div id="duration2" class="box">UI / UX</div></a>
+                </div>
+                <div class="container">
+                    <a href="video.html"><div id="duration3" class="box">Video</div></a>
+                </div>
+                <div class="container">
+                    <a href="photography.html"><div id="duration4" class="box">Photography</div></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Christine Jeong Portfolio &copy; 2024</p>
+        </div>
+
+    </body>
+</html>
