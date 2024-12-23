@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christine Jeong | Final Project | Video Page</title>
+        <link rel="stylesheet" href="final_project.css">
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="Meta Tag, Responsive Web Design, ITP 104, USC, HTML, CSS">
+        <meta name="description" content="This is the 'video' section of the portfolio. This section showcases my video works.">
+
+        <style>
+            h1
+            {
+                color: #dd3c87;
+                font-family: 'Mexcellent3D', fantasy;
+                font-weight: normal;
+                font-size: 80px;
+                margin-top: auto;
+                margin-bottom: auto;
+                padding: 170px;
+                padding-bottom: 50px;
+
+                text-align: center;
+                justify-content: center;
+            }
+
+            body
+            {
+                background-color: #f7d4e4;
+            }
+
+            h2
+            {
+                color: #dd3c87;
+                font-family: 'Mexcellent3D', fantasy;
+                font-weight: normal;
+                font-size: 50px;
+                margin-top: auto;
+                margin-bottom: auto;
+                padding: 80px;
+
+                text-align: center;
+                justify-content: center;
+            }
+
+            #gallery
+            {
+                justify-content: center;
+            }
+
+            .container
+            {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Video</h1>
+
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a href="final_project.html#overview-section">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="final_project.html#work-section">Work</a>
+                    <ul id="sub-menu">
+                        <li><a href="graphic_design.html">Graphic Design</a></li>
+                        <li><a href="uiux.html">UI / UX</a></li>
+                        <li><a id="selected-nav" href="video.html">Video</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="gallery">
+            <h2>Refugee Rotoscope, 2022</h2>
+            <div class="container">
+                <video width="600" height="350" controls src="img/Refugee_rotoscope_copy.mp4"></video>
+            </div>
+
+            <h2>VR Drugs, 2022</h2>
+            <div class="container">
+                <video width="600" height="350" controls src="img/VR_drugs_copy.mp4"></video>
+            </div>
+
+            <h2>The Subway, 2022</h2>
+            <div class="container">
+                <video width="600" height="350" controls src="img/The_Subway_copy.mp4"></video>
+            </div>
+        </div>
+
+        <div id="padding">
+            <div id="footer">
+                <p>Christine Jeong Portfolio &copy; 2024</p>
+            </div>
+        </div>
+    </body>
+</html>
