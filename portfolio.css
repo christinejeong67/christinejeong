@@ -23,7 +23,7 @@
 {
     display: flex;
     justify-content: center;
-    box-shadow: 0px 3px 5px #ccc;
+    /* box-shadow: 0px 3px 5px #ccc; */
 
     position: fixed;
     top: 0px;
@@ -41,22 +41,25 @@
     width: 150px;
     line-height: 50px;
     text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
 
     display: block;
-    color:#fff;
-    border-bottom: 2px solid #777;
+    color:#dd3c87;
+    /* color:#fff; */
+    /* border-bottom: 2px solid #777; */
 }
 
 #navbar ul
 {
     list-style: none;
     margin: 0px;
-    padding: 0px;
+    padding-top: 30px;
 }
 
 #navbar li
 {
-    background-color: #dd3c87;
+    /* background-color: #dd3c87; */
     width: auto;
     text-align: center;
     position: relative;
@@ -69,8 +72,8 @@
 
 #navbar #selected-nav #navbar li:hover, #navbar a:hover
 {
-    background-color: #dd3c87;
-    border-bottom: 2px solid #023027;
+    /* background-color: #dd3c87; */
+    /* border-bottom: 2px solid #023027; */
     color: #023027;
 }
 
@@ -118,5 +121,5 @@
 
 #padding
 {
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
