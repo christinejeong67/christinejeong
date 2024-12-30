@@ -31,38 +31,92 @@
 
             h2
             {
-                color: #dd3c87;
-                font-family: 'Mexcellent3D', fantasy;
-                font-weight: normal;
-                font-size: 50px;
+                /* color: #dd3c87; */
+                font-family: "Raleway", sans-serif;
+                font-weight: bold;
+                font-size: 30px;
                 margin-top: auto;
                 margin-bottom: auto;
-                padding: 80px;
-
-                text-align: center;
-                justify-content: center;
+                padding-left: 60px;
+                padding-top: 170px;
             }
 
             #gallery
             {
+                display: flex;
+			    align-items: flex-start;
+                flex-wrap: wrap;
                 justify-content: center;
             }
 
-            .images
+            .img-container 
             {
-                width: 500px;
-                height: auto;
-                margin-top: auto;
-                margin-bottom: auto;
-                padding: 0px;
-                padding-left: 30px;
+                background-color: #CCC;
+                margin: 20px;
+                margin-top: 40px;
+                margin-bottom: 70px;
+                width: 650px;
+                height: 500px;
+
+                overflow: hidden;
+                position: relative;
+		    }
+
+            /* .img-container2 
+            {
+                background-color: #CCC;
+                margin: 10px;
+                width: 450px;
+                height: 700px;
+
+                overflow: hidden;
+                position: relative;
+		    } */
+
+            .caption
+            {
+                font-family: "Raleway", sans-serif;
+                font-weight: normal;
+                font-size: 20px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                background-color: rgba(0,0,0, 0.6);
+                color: #fff;
+
+                text-align: center;
+                padding-top: 60px;
                 padding-right: 30px;
+                padding-left: 30px;
+                visibility: hidden;
             }
 
-            .container
+            .img-container:hover > .caption
             {
-                text-align: center;
+                visibility: visible;
             }
+
+            .img-container > img
+            {
+                height: 100%;
+                width: auto;
+            }
+
+            .img-container > .width-100
+            {
+                width: 100%;
+                height: auto;
+            }
+            .title
+            {
+                font-family: "Raleway", sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            
         </style>
     </head>
 
@@ -79,53 +133,82 @@
         </div>
 
         <div id="gallery">
-            <h2>The Night of Seoul, 2022</h2>
-            <div class="container">
-                <img class="images" src="img2/The_Night_of_Seoul_copy.jpeg" alt="Night_of_Seoul">
-                <!-- <p>“The Night of Seoul” is a digital illustration that shows the dynamic and restless energy of Seoul's nightlife. Every time I walk through the streets of Seoul at night, I always get fascinated by the city’s lively spirit full of vibrant lights, youth, and of course, delicious street foods. The wide range of neon line drawings accurately depicts the dazzling nightlife of Seoul and adds visual emphasis and contrast between the pitch-black night sky and the atmosphere of the city. The repetition of lines creates visual rhythm and harmony in the overall composition to represent the festive mood of the scene.</p> -->
+            <div class="img-container">
+                <img src="img2/The_Night_of_Seoul_copy.jpeg" alt="Night_of_Seoul">
+                <div class="caption"><div class="title">The Night of Seoul, 2022</div><br>
+                    The Night of Seoul” is a digital illustration that shows the dynamic and restless energy of Seoul's nightlife. Every time I walk through the streets of Seoul at night, I always get fascinated by the city’s lively spirit full of vibrant lights, youth, and of course, delicious street foods. The wide range of neon line drawings accurately depicts the dazzling nightlife of Seoul and adds visual emphasis and contrast between the pitch-black night sky and the atmosphere of the city. The repetition of lines creates visual rhythm and harmony in the overall composition to represent the festive mood of the scene.
+                </div>
             </div>
 
-            <h2>The Night of Osaka, 2022</h2>
-            <div class="container">
-                <img class="images" src="img2/The_Night_of_Osaka_copy.jpg" alt="Night_of_Osaka">
+            <div class="img-container">
+                <img src="img2/The_Night_of_Osaka_copy.jpg" alt="Night_of_Osaka">
+                <div class="caption"><div class="title">The Night of Osaka, 2022</div><br>
+                    “The Night of Osaka” is a visual extension of “The Night of Seoul” as it portrays and narrates another jubilant cityscape with a similar illustration style but with a different background setting. When I visited Japan, I was mesmerized by the clean, organized streets filled with tourists and locals enjoying their moment and time with the surroundings. Similarly, the city’s festive atmosphere is captured by the unified repetition of the well-organized buildings and vibrant signboards; the overall orange hue permeates throughout the composition to illustrate the youthful Japanese nightlife.
+                </div>
             </div>
 
-            <h2>Elephant and the Star, 2022</h2>
-            <div class="container">
-                <img class="images" src="img2/Childrens_Book_1_copy.jpg" alt="Childrens_Book_1">
-                <img class="images" src="img2/Children's_Book_2_copy.jpeg" alt="Childrens_Book_2">
+            <div class="img-container">
+                <img src="img2/Childrens_Book_1_copy.jpg" alt="Childrens_Book_1">
+                <div class="caption"><div class="title">Elephant and the Star, 2022</div><br>
+                    I've always lived by a strong moral code: don't exploit other people's happiness for your own gain, and learn to appreciate your genuine self. Growing up, I’ve seen numerous incidents in the media where powerless people are often dominated by greed and authority. To leave an indelible imprint on children’s minds that personal greed and dominance can impact the lives of powerless people, I’ve endlessly pondered how to efficiently deliver this message from a child’s perspective. This was through including approachable aspects like elephants and stars with concepts such as hope and greed.
+                </div>
             </div>
 
-            <h2>Afghan Refugee Crisis, 2022</h2>
-            <div class="container">
-                <img class="images" src="img2/Afghan_Refugee_Crisis_copy.jpg" alt="Afghan_Refugee_Crisis">
+            <div class="img-container">
+                <img src="img2/Children's_Book_2_copy.jpeg" alt="Childrens_Book_2">
+                <div class="caption"><div class="title">Elephant and the Star, 2022</div><br>
+                    In The Elephant and the Star, an illustrated children’s book that I designed, an elephant realizes his desire to collect all the stars in the sky has darkened the night for others. To make the book visually comfortable for young readers, the gentle texture of Hanji, a traditional handmade Korean paper, was used along with the pastel hues that combine these illustrated elements in a harmonious way.
+                </div>
             </div>
 
-            <h2>Altruistic Mind Magazine, 2022</h2>
-            <div class="container">
-                <img class="images" src="img2/Altruistic_Mind_Magazine_copy.jpg" alt="Altruistic_Mind_Magazine">
+            <div class="img-container">
+                <img src="img2/Afghan_Refugee_Crisis_copy.jpg" alt="Afghan_Refugee_Crisis">
+                <div class="caption"><div class="title">Afghan Refugee Crisis, 2022</div><br>
+                    In this booklet, I incorporated infographics and collages to visualize the tragic story of Aakeen, a young Afghani refugee dreaming of immigrating to the United States. As the immigration process for refugees is often very complicated, controversial, and politicized, the actual chance of successful immigration progress is very slim. Throughout the composition, I poetically portrayed Aakeen’s harrowing experiences in various forms. The fractured shapes in the collages represent the juxtaposition of disheartened emotions and harsh political conflicts that Aakeen had to suffer during the wake of war. Yet, various colors and textures reflect a sense of hope for Aakeen before the reality of war crushes her dreams. 
+                </div>
             </div>
 
-            <h2>Chaos, 2021</h2>
-            <div class="container">
-                <img class="images" src="img2/Chaos_copy.jpg" alt="Chaos">
+            <div class="img-container">
+                <img src="img2/Altruistic_Mind_Magazine_copy.jpg" alt="Altruistic_Mind_Magazine">
+                <div class="caption"><div class="title">Altruistic Mind Magazine, 2022</div><br>
+                    This infographic booklet details one of the most severe refugee situations in recent history, caused by the Russo-Ukrainian War. Within the piece, I focused on conveying the tragic reality of the war with graphic elements and typography. I utilized the Ukrainian language as the main typographic background for the anti-war narrative. Moreover, the yellow color serves as a visual emphasis in the overall composition and creates a controlled flow of information for the reader. The variety of sizes in the texts creates a visual hierarchy and each graphic element serves as a visual guide that aids the viewer's comprehension.  The stark contrast of the white illustrations—especially those of maps, firearms, land, and people—stands out against the black background making this a dominant and powerful booklet that leaves an indelible imprint on the audiences' minds.
             </div>
 
-            <h2>Immigrants, 2021</h2>
-            <div class="container">
-                <img class="images" src="img2/Immigrants_copy.jpeg" alt="Immigrants">
+            <!-- <div class="img-container">
+                <img src="img2/Immigrants_copy.jpeg" alt="Immigrants">
+                <div class="caption"><div class="title">Immigrants, 2021</div><br>
+                    The Night of Seoul” is a digital illustration that shows the dynamic and restless energy of Seoul's nightlife. Every time I walk through the streets of Seoul at night, I always get fascinated by the city’s lively spirit full of vibrant lights, youth, and of course, delicious street foods. The wide range of neon line drawings accurately depicts the dazzling nightlife of Seoul and adds visual emphasis and contrast between the pitch-black night sky and the atmosphere of the city. The repetition of lines creates visual rhythm and harmony in the overall composition to represent the festive mood of the scene.
+                </div>
+            </div> -->
+
+            <!-- <div class="img-container">
+                <img src="img2/Chaos_copy.jpg" alt="Chaos">
+                <div class="caption"><div class="title">Chaos, 2021</div><br>
+                    The two surreal digital artworks created in Photoshop portray refugees’ chaos and difficulty in seeking safe asylum and adapting to a new country. These artworks also represent my endless contemplation and imagination of their inner feelings of being ignored in society and living in constant fear of war. <br><br>
+                    The image's top layer of overlapping hazy patterns gives off a general sense of chaos. Their inner feelings of fear and desperation are amplified by the juxtaposition of the monster-like drawing on top of the refugee women. <br><br>
+                    The different components and multi-layered visuals heighten the chaotic mood and enable viewers to understand the sense of disarray and bewilderment that refugees experience. The repeated lines also produce a sense of echo throughout the entire piece. <br><br>
+                    Through this digital collage piece, I desire to convey the struggles of the minority and lessen the inconceivability and neglect toward refugees, only viewing them as people in the third world.
+                </div>
+            </div> -->
+
+            <!-- <div class="img-container2">
+                <img src="img2/Poverty_infographics1_copy.png" alt="Poverty_infographics_1">
+                <div class="caption"><div class="title">Poverty in the Middle East Infographics, 2022</div><br>
+                    
+                </div>
             </div>
 
-            <h2>Poverty in the Middle East Infographics, 2022</h2>
-            <div class="container">
-                <img class="images" src="img2/Poverty_infographics1_copy.png" alt="Poverty_infographics_1">
-                <img class="images" src="img2/Poverty_infographics2_copy.png" alt="Poverty_infographics_2">
-            </div>
+            <div class="img-container2">
+                <img src="img2/Poverty_infographics2_copy.png" alt="Poverty_infographics_2">
+                <div class="caption"><div class="title">Poverty in the Middle East Infographics, 2022</div><br>
+                    
+                </div>
+            </div> -->
             
         </div>
 
-        <div id="footer">
+        <!-- <div id="footer">
             <p>Christine Jeong Portfolio &copy; 2024</p>
-        </div>
+        </div> -->
     </body>
 </html>
